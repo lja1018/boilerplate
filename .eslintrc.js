@@ -1,7 +1,8 @@
 module.exports = {
-  extends: ['tui'],
+  extends: ['tui', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     browser: true,
